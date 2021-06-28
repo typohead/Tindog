@@ -27,7 +27,8 @@ overflow-x: hidden;
 /*Title Section*/
 
 #title{
-	background-color: #ff4c68;
+	/*background-color: #ff4c68;*/
+	background-image: linear-gradient(to left top ,#FF4C68,#f63d84,#9953CF);
 	overflow-y: hidden;
 	font-family: "montserrat-thin",sans-serif; 
 	color: white;
@@ -105,7 +106,7 @@ h1{
 
 #testimonials{
 	
-	background-color: #ef8172;
+	background-image: linear-gradient(to right ,#ef8172,#ef8172,#FFC996);
 	
 }
 
@@ -145,7 +146,7 @@ em{
 /*Press Section*/
 
 #press{
-	background-color:#ef8172;
+	background-image: linear-gradient(to right  ,#ef8172,#ef8172,#FFC996);
 	padding:4% 15% 3% ;
 	text-align: center;
 }
@@ -183,12 +184,76 @@ li{
 	color: #6C6866;
 }
 
-/*Call To Action Section*/
+/*Call To Action Section----------------------------------------------------------------*/
 #cta{
 	text-align: center;
 	padding: 8% 15%;
+	color: white;
+	/*background-color:  #ff4c68;*/
+	background-image: linear-gradient(to left top ,#FF4C68,#f63d84,#9953CF);
 }
 
-.cta-button{
-	margin: 3%;
+.cta-download-button{
+	padding-right: 3%;
+	padding-left: 3%;
+	margin: 3% 2%;
+}
+
+
+
+
+
+/*Footer---------------------------------------------------------------------------------*/
+
+
+#footer{
+	text-align: center;
+	padding: 6% 15%;
+}
+
+.social{
+	display: inline-block;
+	margin-right: 1%;
+	cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+/*Media Queries------------------------------------------------------------------------------------------------------------*/
+
+@media (max-width: 1030px)
+{
+	.dogiphone{
+		position: relative;
+		width: 60%;
+		overflow-x: hidden;
+		transform: rotate(22deg);
+		top: 10%;
+		right: 35%;
+
+	}
+
+	#title{
+		text-align: center;
+		overflow-y: hidden;
+	}	
+
+	.navbar-brand{
+		font-size: 2.2rem;
+	}
+
+	h1{
+		font-size: 3.8rem;
+	}
+
+	.download-btn
+	{
+		margin-top: 10%;
+	}
 }
